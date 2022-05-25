@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Ultimate Fix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section class="home">
+    <div class="headerbg ">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <nav>
+              <div class="logo">
+                <img src="image/tuflogo.png" alt="">
+              </div>
+                 <!--menu btn-->
+              <ul id="menuitem">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="Categories.html">Category</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>Feedback</h1>
+            <p>Tell us what you think</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop" id="movies">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Feedback</h2>
+      </div>
+
+     
+        
+    </div>
+  </section>
+
+  
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <div class=" section-gap" id="contact"></div>
+  <div class="wrapper">
+    <h4 class="sub-title text-center">Find us</h4>
+    <h3 class="global-title text-center">Contact us</h3>
+    <div class="d-grid contact-view">
+      <div class="cont-details">
+
+
+        <div class="cont-top">
+
+          <div class="cont-left text-center">
+            <span class="fa fa-phone text-primary"></span>
+          </div>
+
+          <div class="cont-right">
+            <h6>Call Us</h6>
+            <p><a href="#">+267 77167309</a></p>
+          </div>
+
+        </div>
+
+
+        <div class="cont-top margin-up">
+
+          <div class="cont-left text-center">
+            <span class="fa fa-envelope-o text-primary"></span>
+          </div>
+          <div class="cont-right">
+            <h6>Email Us</h6>
+            <p><a href="mailto:example@mail.com" class="mail">TheUltimateFix@gmail.com</a></p>
+          </div>
+          
+        </div>
+
+
+        <div class="cont-top margin-up">
+          <div class="cont-left text-center">
+            <span class="fa fa-map-marker text-primary"></span>
+          </div>
+          <div class="cont-right">
+            <h6>Address</h6>
+            <p> 121113 Kgale Gaborone</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="map-content" id="feedback">
+        <form action="#" method="post">
+          <div class="twice-two">
+            <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+            <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
+              required="">
+          </div>
+
+          <div class="twice">
+            <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject"
+              required="">
+          </div>
+
+          <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+            required=""></textarea>
+          <button type="submit" class="btn btn-contact">Send Message</button>
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+<footer>
+    
+    <Center>
+       <div class=" section-gap" id="contact"></div>
+         <p id="pfooter">Copyright@TheUlimateFix_Movies</p>
+       </div>
+     </Center>
+     
+ 
+   </footer>
+</body>
+
+</html>
