@@ -145,15 +145,6 @@ header .navbar span {
   display: none;
 }
 
-.subscribe i:nth-child(1) {
-  margin-top: 17px;
-}
-
-.subscribe i {
-  font-size: 20px;
-  margin-right: 20px;
-}
-
 #palybtn {
   background: transparent;
   width: 50px;
